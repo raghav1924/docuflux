@@ -29,3 +29,4 @@ export interface ArchitectureReport {
   couplingIndex: number; // avg dependencies per file
   mermaidGraph: string;
 }
+

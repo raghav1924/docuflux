@@ -43,3 +43,4 @@ export class MermaidGenerator {
     return id.replace(/[^a-zA-Z0-9_]/g, '_');
   }
 }
+

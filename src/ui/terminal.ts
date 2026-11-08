@@ -43,3 +43,4 @@ export class TerminalReporter {
     console.log(`${colors.dim}💡 Run 'docuflux visualize --web' to interactively explore the live SVG graph.${colors.reset}\n`);
   }
 }
+

@@ -79,3 +79,4 @@ test('CycleDetector identifies cyclic dependencies correctly', () => {
   assert.strictEqual(cycles.length, 1, 'Should find exactly 1 cyclic component');
   assert.strictEqual(cycles[0].length, 3, 'Cycle length should be 3');
 });
+

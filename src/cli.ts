@@ -120,3 +120,4 @@ ${colors.bold}EXAMPLES:${colors.reset}
   $ docuflux analyze . --export ./architecture.html --mermaid ./graph.mmd
 `);
 }
+

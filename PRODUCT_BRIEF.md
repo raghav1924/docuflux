@@ -36,3 +36,4 @@ In November 2026, engineering teams and AI coding agents produce code at unprece
 - **Runtime:** Node.js (>=18.0.0, zero external production dependencies)
 - **Design System:** Dark-mode typography + Responsive Interactive Web Canvas (SVG Graph rendering, CSS Grid, high-contrast badges)
 - **Testing:** Native Node.js test runner (`node:test`, `node:assert`)
+

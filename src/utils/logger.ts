@@ -39,3 +39,4 @@ export const log = {
   step: (n: number, total: number, msg: string) =>
     console.log(`${colors.gray}[${n}/${total}]${colors.reset} ${colors.bold}${msg}${colors.reset}`),
 };
+
