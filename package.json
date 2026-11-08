@@ -1,0 +1,36 @@
+{
+  "name": "docuflux",
+  "version": "1.0.0",
+  "description": "High-speed Architecture Visualizer, Dependency Graph Generator & Living Documentation Engine for TypeScript/JavaScript codebases.",
+  "main": "dist/index.js",
+  "bin": {
+    "docuflux": "./dist/bin.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc -w",
+    "start": "node dist/bin.js",
+    "test": "node --test dist/tests/**/*.test.js"
+  },
+  "keywords": [
+    "documentation",
+    "architecture",
+    "dependency-graph",
+    "visualizer",
+    "mermaid",
+    "typescript",
+    "circular-dependency",
+    "developer-tools",
+    "cli"
+  ],
+  "author": "Jatin Sharma <raghavjatin245@gmail.com> (https://jatinsh.netlify.app/)",
+  "homepage": "https://jatinsh.netlify.app/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/raghav1924/docuflux.git"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
