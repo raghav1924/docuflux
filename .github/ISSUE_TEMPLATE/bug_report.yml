@@ -1,0 +1,21 @@
+name: Bug Report
+description: Create a report to help improve DocuFlux
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for filing a bug report for DocuFlux!
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Describe the bug encountered and expected behavior.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction-steps
+    attributes:
+      label: Reproduction Steps
+      description: CLI command or file structure that triggers the issue.
+    validations:
+      required: false
