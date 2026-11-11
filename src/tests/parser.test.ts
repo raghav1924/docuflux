@@ -80,3 +80,36 @@ test('CycleDetector identifies cyclic dependencies correctly', () => {
   assert.strictEqual(cycles[0].length, 3, 'Cycle length should be 3');
 });
 
+test('CycleDetector returns empty array for acyclic DAG', () => {
+  const dagNodes: Record<string, FileNode> = {
+    'root.ts': {
+      id: 'root.ts',
+      absolutePath: '/root.ts',
+      name: 'root.ts',
+      extension: '.ts',
+      lineCount: 10,
+      sizeBytes: 100,
+      dependencies: ['leaf.ts'],
+      dependents: [],
+      isEntryPoint: true,
+      isOrphan: false,
+    },
+    'leaf.ts': {
+      id: 'leaf.ts',
+      absolutePath: '/leaf.ts',
+      name: 'leaf.ts',
+      extension: '.ts',
+      lineCount: 5,
+      sizeBytes: 50,
+      dependencies: [],
+      dependents: ['root.ts'],
+      isEntryPoint: false,
+      isOrphan: false,
+    },
+  };
+
+  const cycles = CycleDetector.findCycles(dagNodes);
+  assert.strictEqual(cycles.length, 0, 'DAG should have zero cycles');
+});
+
+
