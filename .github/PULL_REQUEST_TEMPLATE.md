@@ -14,3 +14,4 @@ Brief summary of the architecture visualizer or graph feature introduced in this
 - [ ] My code adheres to TypeScript strict mode
 - [ ] Unit tests pass cleanly (`npm test`)
 - [ ] Zero external runtime dependencies maintained
+
