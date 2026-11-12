@@ -15,3 +15,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Standalone HTML graph report export (`--export docuflux-report.html`).
 - Automated CI/CD gates (`--fail-on-cycles`, `--max-coupling 0.8`).
 - Zero external runtime dependencies.
+

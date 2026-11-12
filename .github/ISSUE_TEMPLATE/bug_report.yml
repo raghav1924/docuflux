@@ -19,3 +19,4 @@ body:
       description: CLI command or file structure that triggers the issue.
     validations:
       required: false
+
