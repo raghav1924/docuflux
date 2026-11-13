@@ -57,3 +57,4 @@ DocuFlux computes classical Robert C. Martin package metrics:
 ## Zero-Dependency Philosophy
 
 DocuFlux requires no external parsing frameworks or binary graphviz tools. It runs completely inside native Node.js (`node:fs`, `node:path`, `node:http`).
+
