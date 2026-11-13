@@ -1,0 +1,24 @@
+name: Feature Request
+description: Suggest an enhancement or new feature for DocuFlux
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve DocuFlux!
+  - type: textarea
+    id: problem
+    attributes:
+      label: Is your feature request related to an AST parsing or graph visualization problem?
+      description: Explain what you are trying to analyze.
+      placeholder: When generating dependency DAGs for large monorepos...
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Describe the proposed visualization or feature
+      description: How should the graph or export engine behave?
+    validations:
+      required: true
