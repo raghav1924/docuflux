@@ -112,4 +112,26 @@ test('CycleDetector returns empty array for acyclic DAG', () => {
   assert.strictEqual(cycles.length, 0, 'DAG should have zero cycles');
 });
 
+test('CycleDetector identifies direct self-referencing loops', () => {
+  const selfLoopNodes: Record<string, FileNode> = {
+    'self.ts': {
+      id: 'self.ts',
+      absolutePath: '/self.ts',
+      name: 'self.ts',
+      extension: '.ts',
+      lineCount: 15,
+      sizeBytes: 150,
+      dependencies: ['self.ts'],
+      dependents: ['self.ts'],
+      isEntryPoint: false,
+      isOrphan: false,
+    },
+  };
+
+  const cycles = CycleDetector.findCycles(selfLoopNodes);
+  assert.strictEqual(cycles.length, 1, 'Should detect self loop');
+  assert.strictEqual(cycles[0].cycle[0], 'self.ts');
+});
+
+
 
