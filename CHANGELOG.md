@@ -16,3 +16,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Automated CI/CD gates (`--fail-on-cycles`, `--max-coupling 0.8`).
 - Zero external runtime dependencies.
 
+
+## [1.1.0] - 2026-11-15
+### Added
+- Mathematical documentation for Tarjan's SCC cycle algorithm.
+- Automated living documentation CI workflow guide.
+- Mermaid graph theme customization guide and FAQ.
