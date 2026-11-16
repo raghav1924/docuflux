@@ -22,3 +22,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Mathematical documentation for Tarjan's SCC cycle algorithm.
 - Automated living documentation CI workflow guide.
 - Mermaid graph theme customization guide and FAQ.
+
+## [1.2.0] - 2026-11-16
+### Added
+- Design system documentation covering Swiss Design and Glassmorphism.
+- Tarjan's SCC algorithm mathematical analysis.
+- Modularity metrics and CLI command cheatsheet.
