@@ -1,7 +1,20 @@
-# DocuFlux FAQ
+# Frequently Asked Questions (docuflux)
 
-### How does DocuFlux handle path aliases like `@/components/*`?
-DocuFlux inspects your `tsconfig.json` `compilerOptions.paths` mapping and resolves module specifiers to absolute files.
+### 1. Does docuflux require external npm dependencies?
+No. docuflux is engineered to run with zero external runtime npm dependencies, relying exclusively on Node.js standard libraries and strict TypeScript.
 
-### Does it require external parsers?
-No, DocuFlux includes an internal regex and lexical tokenizer requiring zero npm dependencies.
+### 2. Can docuflux run inside automated CI/CD pipelines?
+Yes. docuflux includes dedicated CLI flags and exit codes designed specifically for GitHub Actions, GitLab CI, and Docker build steps.
+
+### 3. How do I start the local Web Studio?
+Run the `studio` subcommand from your terminal:
+```bash
+npx docuflux studio
+```
+Then visit the designated local port in your browser.
+
+### 4. What Node.js versions are supported?
+Node.js v18.0.0 and above (LTS 18, 20, and 22).
+
+---
+*Need more help? Contact [Jatin Sharma](https://jatinsh.netlify.app/)*
