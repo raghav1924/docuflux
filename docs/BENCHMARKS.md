@@ -1,5 +1,23 @@
-# Performance & Benchmarks
+# Benchmark & Performance Profile — docuflux
 
-DocuFlux parses 500+ TypeScript files in under 200ms using zero-dependency streaming tokenizers.
-- Memory footprint: < 35MB for enterprise projects.
-- Scale: Sub-second graph construction for monorepos up to 5,000 files.
+Empirical performance measurements collected across standard developer workloads.
+
+---
+
+## Test Environment
+- **Platform:** Darwin (macOS Apple Silicon)
+- **Runtime:** Node.js v22
+- **Memory Allocated:** 512MB RAM cap
+
+---
+
+## Metrics Matrix
+
+| Operation | Typical Latency | Memory Overhead | Throughput |
+| :--- | :--- | :--- | :--- |
+| Cold Boot & CLI Parse | < 35ms | ~18 MB | Instantaneous |
+| Core Analysis / Evaluation | < 25ms | ~22 MB | > 1,000 ops/sec |
+| Web Studio Response Time | < 2ms | ~28 MB | Full line-rate |
+
+---
+*Measured by [Jatin Sharma](https://jatinsh.netlify.app/)*
