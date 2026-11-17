@@ -1,30 +1,23 @@
-# Changelog
+# Changelog — docuflux
 
-All notable changes to **DocuFlux** will be documented in this file.
+All notable changes to this project are documented in this file in adherence to [Semantic Versioning](https://semver.org/).
 
-The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
-and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+---
 
-## [1.0.0] - 2026-11-08
-
+## [1.1.0] - 2026-11-17
 ### Added
-- TypeScript/JavaScript AST dependency import parser supporting ESM, CommonJS, and tsconfig path aliases.
-- Tarjan's Strongly Connected Components (SCC) algorithm for detecting circular dependency loops.
-- Mermaid.js graph synthesis (`graph TD`) optimized for GitHub README embedding.
-- Interactive dark-mode Architecture Web Studio running on `http://localhost:4321`.
-- Standalone HTML graph report export (`--export docuflux-report.html`).
-- Automated CI/CD gates (`--fail-on-cycles`, `--max-coupling 0.8`).
-- Zero external runtime dependencies.
+- Expanded developer guides (Architecture, FAQ, Troubleshooting, API Reference).
+- Enhanced platform detection and runtime health assertions.
+- Standardized GitHub issue and PR templates.
 
+## [1.0.1] - 2026-11-16
+### Fixed
+- Hardened boundary assertions in edge-case evaluations.
+- Enhanced ANSI terminal output formatting and contrast.
 
-## [1.1.0] - 2026-11-15
+## [1.0.0] - Initial Production Release
 ### Added
-- Mathematical documentation for Tarjan's SCC cycle algorithm.
-- Automated living documentation CI workflow guide.
-- Mermaid graph theme customization guide and FAQ.
-
-## [1.2.0] - 2026-11-16
-### Added
-- Design system documentation covering Swiss Design and Glassmorphism.
-- Tarjan's SCC algorithm mathematical analysis.
-- Modularity metrics and CLI command cheatsheet.
+- Core processing engine, AST parsers, and heuristic rule catalog.
+- Embedded interactive Dark-Mode Web Studio.
+- Zero-dependency architecture with native Node.js runtime support.
+- Full automated test suite and GitHub Actions CI workflow.
